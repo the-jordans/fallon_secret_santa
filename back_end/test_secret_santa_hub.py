@@ -32,5 +32,12 @@ class MyTest(unittest.TestCase):
             occurrence_counts_list =  Counter(gift_recipients_list).values()
             self.assertFalse(any(i > 1 for i in occurrence_counts_list))
 
+    def test_2018_matches(self):
+        for i in range(30):
+            self.assertEqual(len([print(pair) for pair
+                                  in secret_santa_hub.return_matches_for_everyone()
+                                  if family_dict[pair['giver']][2018] == pair['receiver']]), 0)
+
+
 if __name__ == '__main__':
     unittest.main()
