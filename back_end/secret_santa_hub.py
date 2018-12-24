@@ -8,6 +8,17 @@ def return_possible_matches_indv(find_matches_for_name):
                         and possible_match != family_dict[find_matches_for_name]['SO']]
     return possible_matches
 
-
 def return_matches_for_everyone():
-    return dict((name,random.choice(list(family_dict.keys()))) for name in family_dict.keys())
+    current_available_names = list(family_dict.keys())
+    family_pairs = []
+    try:
+        for giver_name in family_dict.keys():
+            optional_names = set(return_possible_matches_indv(giver_name))
+            final_options = list(optional_names.intersection(set(current_available_names)))
+            reciever_name = random.choice(final_options)
+            current_available_names.remove(reciever_name)
+            family_pairs.append({'giver': giver_name,
+                                 'receiver': reciever_name})
+    except:
+        return return_matches_for_everyone()
+    return family_pairs
