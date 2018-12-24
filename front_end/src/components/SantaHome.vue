@@ -2,8 +2,8 @@
   <div>
     <h3>Participants:</h3>
     <div id="participants">
-      <div class="participant" v-for="(person) in people" :key="person.name">
-        <Participant v-bind:name="person.name"></Participant>
+      <div class="participant" v-for="(person) in people" :key="person.giver">
+        <Participant v-bind:name="person.giver"></Participant>
         <span v-if="person.receiver" class="arrow">➡️</span>
         <Participant v-if="person.receiver" v-bind:name="person.receiver"></Participant>
       </div>

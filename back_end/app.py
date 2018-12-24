@@ -1,9 +1,11 @@
 from flask import Flask, render_template, Response
+from flask_cors import CORS
 from family_constants import family_dict
 from secret_santa_hub import return_matches_for_everyone
 import json
 
 app = Flask(__name__)
+CORS(app)
 
 @app.route('/family_data')
 def family_data():
@@ -19,4 +21,4 @@ def gift_data():
 
 
 if __name__ == '__main__':
-    app.run(host='0.0.0.0', port=8080, debug=True, threaded=True)
+    app.run(host='0.0.0.0', port=5000, debug=True, threaded=True)

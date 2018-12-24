@@ -1,7 +1,7 @@
 <template>
   <div class="participant">
     <img :src="require(`../assets/${name.toLowerCase()}.png`)" />
-    <span class="name">{{name }}</span>
+    <span class="name">{{name}}</span>
   </div>
 </template>
 
@@ -21,6 +21,6 @@
   }
 
   .name {
-    width: 80px;
+    width: 150px;
   }
 </style>

@@ -12,14 +12,14 @@
     name: 'app',
     data: () => ({
       people: [
-        {name: 'Gabe', receiver: null},
-        {name: 'Jen', receiver: null},
-        {name: 'JordanF', receiver: null},
-        {name: 'JordanH', receiver: null},
-        {name: 'Micah', receiver: null},
-        {name: 'Katie', receiver: null},
-        {name: 'Jan', receiver: null},
-        {name: 'Chuck', receiver: null},
+        {giver: 'Jan Fallon', receiver: null},
+        {giver: 'Chuck Fallon', receiver: null},
+        {giver: 'Jordan Fallon', receiver: null},
+        {giver: 'Gabe Fallon', receiver: null},
+        {giver: 'Micah Fallon', receiver: null},
+        {giver: 'Jordan Hagan', receiver: null},
+        {giver: 'Jen Fallon', receiver: null},
+        {giver: 'Katie Fornwalt', receiver: null},
       ]
     }),
     components: {
@@ -27,16 +27,9 @@
     },
     methods: {
       getSantas: function() {
-        this.people = [
-          {name: 'Gabe', receiver: 'JordanH'},
-          {name: 'Jen', receiver: 'Jan'},
-          {name: 'JordanF', receiver: 'Jen'},
-          {name: 'JordanH', receiver: 'Micah'},
-          {name: 'Micah', receiver: 'Chuck'},
-          {name: 'Katie', receiver: 'JordanF'},
-          {name: 'Jan', receiver: 'Gabe'},
-          {name: 'Chuck', receiver: 'Katie'},
-        ]
+        fetch('http://localhost:5000/gift_data')
+          .then(response => response.json())
+          .then(data => this.people = data)
       }
     }
   }
