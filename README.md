@@ -13,3 +13,9 @@ Note: make sure you're using Python 3, consider adding `alias python=python3` to
 1. `yarn install`
 1. `yarn serve`
 1. Visit `localhost:8080` in your browser
+
+### Generate and Send Emails
+1. `cd back_end`
+1. `echo "export SENDGRID_API_KEY='{{insert API key here}}'" > sendgrid.env`
+1. `source ./sendgrid.env`
+1. `python email_sender.py`
