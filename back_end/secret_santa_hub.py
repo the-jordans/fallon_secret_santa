@@ -26,3 +26,7 @@ def return_matches_for_everyone():
     except:
         return return_matches_for_everyone()
     return family_pairs
+
+
+def pull_to_email(giver):
+    return family_dict[giver]['Email']
