@@ -7,7 +7,7 @@ family_dict = {
          2019: 'Jordan Fallon'},
     'Chuck Fallon':
         {'SO': 'Jan Fallon',
-         'Email': 'chuck@chuckfallon.com',
+         'Email': 'cpfallon77@gmail.com',
          'Likes': ['Birds', 'Running', 'Socks'],
          2018: 'Katie Fornwalt',
          2019: 'Jen Fallon'},
@@ -37,7 +37,7 @@ family_dict = {
          2019: 'Jan Fallon'},
     'Jen Fallon':
         {'SO': 'Gabe Fallon',
-         'Email': 'jascott@colorado.edu',
+         'Email': 'jennifer.a.fallo@gmail.com',
          'Likes': ['Baking', 'Running', 'Sour Beers'],
          2018: 'Jordan Hagan',
          2019: 'Micah Fallon'},
