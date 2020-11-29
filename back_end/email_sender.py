@@ -4,7 +4,7 @@ from sendgrid.helpers.mail import Mail, TemplateId, Substitution
 from secret_santa_hub import return_matches_for_everyone, pull_to_email
 
 
-def generate_message(to_email, gift_reciever):
+def generate_message(to_email, gift_receiver):
     message = Mail(
         from_email='secret.santa@jordanfallon.com',
         to_emails=to_email
@@ -12,7 +12,7 @@ def generate_message(to_email, gift_reciever):
 
     message.template_id = TemplateId('d-b1b2395dc84146e4b7cd441de7f01dd2')
     message.dynamic_template_data = {
-            'giftReceiver': gift_reciever,
+            'giftReceiver': gift_receiver,
         }
     return message
 
@@ -28,11 +28,14 @@ def send_message(message):
         print(e.message)
 
 
-if __name__ == '__main__':
-    to_email = pull_to_email('Jordan Hagan')
-    gift_receiver = 'Test'
+def email_pipeline(match):
+    to_email = pull_to_email(match['giver'])
+    gift_receiver = match['receiver']
     msg = generate_message(to_email, gift_receiver)
     send_message(msg)
 
 
-
+if __name__ == '__main__':
+    matches = return_matches_for_everyone()
+    for match in matches:
+        email_pipeline(match)
