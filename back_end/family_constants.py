@@ -50,7 +50,7 @@ family_dict = {
          2020: 'Chuck Fallon'},
     'Katie Fallon':
         {'SO': 'Micah Fallon',
-         "Email": 'kfornwalt2@gmail.com',
+         "Email": 'katie.fallon.534@gmail.com',
          'Likes': ['Holistic Body Products', 'Colorado', 'Candles'],
          2018: 'Jan Fallon',
          2019: 'Jordan Hagan',
