@@ -19,7 +19,7 @@
         {giver: 'Micah Fallon', receiver: null},
         {giver: 'Jordan Hagan', receiver: null},
         {giver: 'Jen Fallon', receiver: null},
-        {giver: 'Katie Fornwalt', receiver: null},
+        {giver: 'Katie Fallon', receiver: null},
       ]
     }),
     components: {
