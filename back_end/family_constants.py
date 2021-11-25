@@ -5,12 +5,12 @@ family_dict = {
          'Likes': ['Birds', 'Reading', 'Candles'],
          2018: 'Gabe Fallon',
          2019: 'Jordan Fallon',
-         2020: 'Katie Fornwalt'},
+         2020: 'Katie Fallon'},
     'Chuck Fallon':
         {'SO': 'Jan Fallon',
          'Email': 'cpfallon77@gmail.com',
          'Likes': ['Birds', 'Running', 'Socks'],
-         2018: 'Katie Fornwalt',
+         2018: 'Katie Fallon',
          2019: 'Jen Fallon',
          2020: 'Micah Fallon'},
     'Jordan Fallon':
@@ -25,10 +25,10 @@ family_dict = {
          'Email': 'gabefallo@gmail.com',
          'Likes': ['Running', 'Music', 'Video Games'],
          2018: 'Chuck Fallon',
-         2019: 'Katie Fornwalt',
+         2019: 'Katie Fallon',
          2020: 'Jordan Fallon'},
     'Micah Fallon':
-        {'SO': 'Katie Fornwalt',
+        {'SO': 'Katie Fallon',
          'Email': 'reban4@gmail.com',
          'Likes': ['Video Games', 'Weed', 'Heartfelt Presents'],
          2018: 'Jordan Fallon',
@@ -48,7 +48,7 @@ family_dict = {
          2018: 'Jordan Hagan',
          2019: 'Micah Fallon',
          2020: 'Chuck Fallon'},
-    'Katie Fornwalt':
+    'Katie Fallon':
         {'SO': 'Micah Fallon',
          "Email": 'kfornwalt2@gmail.com',
          'Likes': ['Holistic Body Products', 'Colorado', 'Candles'],
