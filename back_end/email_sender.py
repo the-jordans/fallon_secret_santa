@@ -1,6 +1,6 @@
 import os
 from sendgrid import SendGridAPIClient
-from sendgrid.helpers.mail import Mail, TemplateId, Substitution
+from sendgrid.helpers.mail import Mail, TemplateId
 from secret_santa_hub import return_matches_for_everyone, pull_to_email
 
 
@@ -10,7 +10,7 @@ def generate_message(to_email, gift_receiver):
         to_emails=to_email
     )
 
-    message.template_id = TemplateId('d-b1b2395dc84146e4b7cd441de7f01dd2')
+    message.template_id = TemplateId('d-6717fc23c4af49e3aa57f5efd94a97fa')
     message.dynamic_template_data = {
         'giftReceiver': gift_receiver,
     }
