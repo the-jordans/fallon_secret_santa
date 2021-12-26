@@ -8,7 +8,9 @@ def return_possible_matches_indv(find_matches_for_name):
                         and possible_match != family_dict[find_matches_for_name]['SO']
                         and possible_match != family_dict[find_matches_for_name][2018]
                         and possible_match != family_dict[find_matches_for_name][2019]
-                       ]
+                        and possible_match != family_dict[find_matches_for_name][2020]
+                        and possible_match != family_dict[find_matches_for_name][2021]
+                        ]
     return possible_matches
 
 
@@ -18,7 +20,8 @@ def return_matches_for_everyone():
     try:
         for giver_name in family_dict.keys():
             optional_names = set(return_possible_matches_indv(giver_name))
-            final_options = list(optional_names.intersection(set(current_available_names)))
+            final_options = list(optional_names.intersection(
+                set(current_available_names)))
             reciever_name = random.choice(final_options)
             current_available_names.remove(reciever_name)
             family_pairs.append({'giver': giver_name,
