@@ -37,7 +37,7 @@ def email_pipeline(match):
 
 
 def record(matches):
-    f = open("secret_santas.json", "a")
+    f = open("secret_santas.json", "w")
     f.write(json.dumps(matches, indent=4))
     f.close()
 
