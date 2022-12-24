@@ -6,7 +6,8 @@ family_dict = {
          2018: 'Gabe Fallon',
          2019: 'Jordan Fallon',
          2020: 'Katie Fallon',
-         2021: 'Micah Fallon'},
+         2021: 'Micah Fallon',
+         2022: 'Jordan Hagan'},
     'Chuck Fallon':
         {'SO': 'Jan Fallon',
          'Email': 'cpfallon77@gmail.com',
@@ -14,7 +15,8 @@ family_dict = {
          2018: 'Katie Fallon',
          2019: 'Jen Fallon',
          2020: 'Micah Fallon',
-         2021: 'Jordan Hagan'},
+         2021: 'Jordan Hagan',
+         2022: 'Gabe Fallon'},
     'Jordan Fallon':
         {'SO': 'Jordan Hagan',
          'Email': 'thefetts@gmail.com',
@@ -22,7 +24,8 @@ family_dict = {
          2018: 'Jen Fallon',
          2019: 'Gabe Fallon',
          2020: 'Jan Fallon',
-         2021: 'Chuck Fallon', },
+         2021: 'Chuck Fallon',
+         2022: 'Katie Fallon'},
     'Gabe Fallon':
         {'SO': 'Jen Fallon',
          'Email': 'gabefallo@gmail.com',
@@ -30,7 +33,8 @@ family_dict = {
          2018: 'Chuck Fallon',
          2019: 'Katie Fallon',
          2020: 'Jordan Fallon',
-         2021: 'Jan Fallon'},
+         2021: 'Jan Fallon',
+         2022: 'Micah Fallon'},
     'Micah Fallon':
         {'SO': 'Katie Fallon',
          'Email': 'reban4@gmail.com',
@@ -38,7 +42,8 @@ family_dict = {
          2018: 'Jordan Fallon',
          2019: 'Chuck Fallon',
          2020: 'Jordan Hagan',
-         2021: 'Gabe Fallon'},
+         2021: 'Gabe Fallon',
+         2022: 'Jen Fallon'},
     'Jordan Hagan':
         {'SO': 'Jordan Fallon',
          'Email': 'Jordan.Hagan@gmail.com',
@@ -46,7 +51,8 @@ family_dict = {
          2018: 'Micah Fallon',
          2019: 'Jan Fallon',
          2020: 'Jen Fallon',
-         2021: 'Katie Fallon'},
+         2021: 'Katie Fallon',
+         2022: 'Chuck Fallon'},
     'Jen Fallon':
         {'SO': 'Gabe Fallon',
          'Email': 'jennifer.a.fallo@gmail.com',
@@ -54,7 +60,8 @@ family_dict = {
          2018: 'Jordan Hagan',
          2019: 'Micah Fallon',
          2020: 'Chuck Fallon',
-         2021: 'Jordan Fallon'},
+         2021: 'Jordan Fallon',
+         2022: 'Jan Fallon'},
     'Katie Fallon':
         {'SO': 'Micah Fallon',
          'Email': 'katie.fallon.534@gmail.com',
@@ -62,5 +69,6 @@ family_dict = {
          2018: 'Jan Fallon',
          2019: 'Jordan Hagan',
          2020: 'Gabe Fallon',
-         2021: 'Jen Fallon'}
+         2021: 'Jen Fallon',
+         2022: 'Jordan Fallon'},
 }
