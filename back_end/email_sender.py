@@ -1,5 +1,6 @@
 import json
 import os
+import random
 from sendgrid import SendGridAPIClient
 from sendgrid.helpers.mail import Mail, TemplateId
 from secret_santa_hub import return_matches_for_everyone, pull_to_email
@@ -37,13 +38,23 @@ def email_pipeline(match):
 
 
 def record(matches):
-    f = open("secret_santas.json", "w")
-    f.write(json.dumps(matches, indent=4))
+    for_hagan = [x for x in matches if x['receiver'] == 'Jordan Fallon']
+    for_fallon = [x for x in matches if x not in for_hagan]
+    random.shuffle(for_fallon)
+    rando = for_fallon.pop()
+    for_hagan.append(rando)
+
+    f = open("secret_santas_for_fallon.json", "w")
+    f.write(json.dumps(for_fallon, indent=4))
+    f.close()
+
+    f = open("secret_santas_for_hagan.json", "w")
+    f.write(json.dumps(for_hagan, indent=4))
     f.close()
 
 
 if __name__ == '__main__':
     matches = return_matches_for_everyone()
     record(matches)
-    for match in matches:
-        email_pipeline(match)
+    # for match in matches:
+    #     email_pipeline(match)
