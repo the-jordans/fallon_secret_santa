@@ -10,6 +10,7 @@ def return_possible_matches_indv(find_matches_for_name):
                         and possible_match != family_dict[find_matches_for_name][2019]
                         and possible_match != family_dict[find_matches_for_name][2020]
                         and possible_match != family_dict[find_matches_for_name][2021]
+                        and possible_match != family_dict[find_matches_for_name][2022]
                         ]
     return possible_matches
 

@@ -38,11 +38,18 @@ def email_pipeline(match):
 
 
 def record(matches):
+    random.shuffle(matches)
+
+    ## Hagan solution - working!
+    for_fallon = [x for x in matches if x['receiver'] == 'Jordan Hagan']
     for_hagan = [x for x in matches if x['receiver'] == 'Jordan Fallon']
-    for_fallon = [x for x in matches if x not in for_hagan]
-    random.shuffle(for_fallon)
-    rando = for_fallon.pop()
-    for_hagan.append(rando)
+    left_over = [x for x in matches if x['receiver'] not in ['Jordan Hagan', 'Jordan Fallon']]
+    
+    for_hagan += left_over[3:]
+    for_fallon += left_over[:3]
+    
+    print(len(for_hagan))
+    print(len(for_fallon))
 
     f = open("secret_santas_for_fallon.json", "w")
     f.write(json.dumps(for_fallon, indent=4))
