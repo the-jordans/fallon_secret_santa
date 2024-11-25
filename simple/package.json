@@ -1,0 +1,14 @@
+{
+  "name": "simple",
+  "version": "1.0.0",
+  "main": "build/index.js",
+  "scripts": {
+    "go": "tsc && node build/index.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "typescript": "^5.7.2"
+  }
+}
