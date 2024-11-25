@@ -1,2 +1,5 @@
-const num: Number = 5
-console.log(num)
+import { drawNames } from "./hat"
+import { saveToFiles } from "./save"
+
+const results = drawNames()
+saveToFiles(results)
